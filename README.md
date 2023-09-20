@@ -34,6 +34,12 @@ https://www.npmjs.com/package/vc-npm-resume
 12. Fancify the table in `index.js`
 13. `npm install chalk`
 14. Add `node_modules` to `gitignore`
+15. Add `"type": "module"` to `package.json`
+16. Add `import chalk from "chalk"`
+    - Fun fact: "ANSI Escape codes" is what they're called
+    - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+17. `npm install strip-ansi`
+18. Use `stripAnsi` in `index.js` to ease line length computations with chalk
 
 ## Debugging
 
@@ -61,6 +67,10 @@ Either:
 - Add `"type": "module"` to your `package.json`
 - Rename the file to `.mjs`
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
 ## Error [ERR_REQUIRE_ESM]: require() of ES Module...
 
-2. Switch from CJS (`require`) to ESM (`import`)
+Switch from CJS (`require`) to ESM (`import`)
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
