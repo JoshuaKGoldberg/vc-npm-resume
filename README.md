@@ -27,6 +27,10 @@ https://www.npmjs.com/package/vc-npm-resume
    - Verify with `npm whoami`
 8. `npm publish`
 9. `npx vc-npm-resume@latest`
+10. Make some changes to the file
+11. `npm version patch`
+    - This creates a Git commit with a tag
+    - This updates your `package.json`
 
 ## Debugging
 
