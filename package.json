@@ -1,0 +1,24 @@
+{
+  "name": "vc-npm-resume",
+  "version": "0.0.2",
+  "description": "A workshop showing making your own `npx`-runnable npm package. 🎁",
+  "main": "index.js",
+  "scripts": {
+    "test": "todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaKGoldberg/vc-npm-resume.git"
+  },
+  "keywords": [
+    "virtual",
+    "coffee",
+    "resume"
+  ],
+  "author": "Josh Goldberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaKGoldberg/vc-npm-resume/issues"
+  },
+  "homepage": "https://github.com/JoshuaKGoldberg/vc-npm-resume#readme"
+}
