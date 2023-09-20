@@ -1,7 +1,7 @@
 {
   "bin": "index.js",
   "name": "vc-npm-resume",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A workshop showing making your own `npx`-runnable npm package. 🎁",
   "main": "index.js",
   "repository": {
