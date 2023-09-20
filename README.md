@@ -16,17 +16,33 @@ https://www.npmjs.com/package/vc-npm-resume
 
 1. Create an `index.js` file
 2. Add a `console.log` to that file
-3. Add `#!/usr/bin/env node` to the top
-4. Make an npm account (https://www.npmjs.com/signup)
-5. `npm login`
+3. `node index.js`: it runs!
+   - `node --watch index.js`: it runs in watch mode
+4. `npm init`
+   - Add a `bin: "index.js"`
+   - If you're not Josh, change the `name`
+5. Add `#!/usr/bin/env node` to the top of `index.js`
+6. Make an npm account (https://www.npmjs.com/signup)
+7. `npm login`
    - Verify with `npm whoami`
-6. `npm publish`
-7. `npx vc-npm-resume@latest`
+8. `npm publish`
+9. `npx vc-npm-resume@latest`
 
 ## Debugging
 
 ### `403` Error in `npm publish`
 
-If you get an error like _`You cannot publish over the previously published versions`_, try changing the version in `package.json`.
+#### You do not have permission to publish "vc-npm-resume". Are you logged in as the correct user?
+
+Change the name in your `package.json`.
+
+#### `You cannot publish over the previously published versions`
+
+Try changing the version in `package.json`.
 
 Otherwise, try `npm login` to make sure you're logged in.
+
+### npm ERR! could not determine executable to run
+
+Add a `bin` entry in `package.json`.
+And don't feel to bad about it, I totally forgot during the workshop 😉.

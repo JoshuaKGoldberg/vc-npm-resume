@@ -1,11 +1,9 @@
 {
+  "bin": "index.js",
   "name": "vc-npm-resume",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A workshop showing making your own `npx`-runnable npm package. 🎁",
   "main": "index.js",
-  "scripts": {
-    "test": "todo"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoshuaKGoldberg/vc-npm-resume.git"
