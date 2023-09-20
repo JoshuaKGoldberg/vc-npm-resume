@@ -21,7 +21,7 @@ https://www.npmjs.com/package/vc-npm-resume
 4. `npm init`
    - Add a `bin: "index.js"`
    - If you're not Josh, change the `name`
-5. Add `#!/usr/bin/env node` to the top of `index.js`
+5. Add `#!/usr/bin/env node` ("hashbang comment) to the top of `index.js`
 6. Make an npm account (https://www.npmjs.com/signup)
 7. `npm login`
    - Verify with `npm whoami`
