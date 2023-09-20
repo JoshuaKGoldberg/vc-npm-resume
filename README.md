@@ -32,6 +32,7 @@ https://www.npmjs.com/package/vc-npm-resume
     - This creates a Git commit with a tag
     - This updates your `package.json`
 12. Fancify the table in `index.js`
+13. `npm install chalk`
 
 ## Debugging
 
