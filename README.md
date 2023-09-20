@@ -53,3 +53,14 @@ Otherwise, try `npm login` to make sure you're logged in.
 
 Add a `bin` entry in `package.json`.
 And don't feel to bad about it, I totally forgot during the workshop 😉.
+
+## Cannot use import statement outside a module
+
+Either:
+
+- Add `"type": "module"` to your `package.json`
+- Rename the file to `.mjs`
+
+## Error [ERR_REQUIRE_ESM]: require() of ES Module...
+
+2. Switch from CJS (`require`) to ESM (`import`)

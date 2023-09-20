@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+import chalk from "chalk";
+// const chalk = require("chalk");
+
 function logLines(lines) {
   const longestLineLength = lines.reduce(
     (biggest, line) => Math.max(biggest, line.length),
