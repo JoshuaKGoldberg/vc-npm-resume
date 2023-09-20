@@ -15,5 +15,5 @@ function logLines(lines) {
 
 logLines([
   "Hello, world!",
-  "Hi, I’m Josh! I’m an independent full time open source developer.",
+  "Hi, I’m Josh! I’m an full time open source developer.",
 ]);

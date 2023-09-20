@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/JoshuaKGoldberg/vc-npm-resume/issues"
   },
-  "homepage": "https://github.com/JoshuaKGoldberg/vc-npm-resume#readme"
+  "homepage": "https://github.com/JoshuaKGoldberg/vc-npm-resume#readme",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
 }

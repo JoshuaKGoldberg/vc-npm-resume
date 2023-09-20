@@ -31,6 +31,7 @@ https://www.npmjs.com/package/vc-npm-resume
 11. `npm version patch`
     - This creates a Git commit with a tag
     - This updates your `package.json`
+12. Fancify the table in `index.js`
 
 ## Debugging
 
