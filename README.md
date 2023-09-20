@@ -33,6 +33,7 @@ https://www.npmjs.com/package/vc-npm-resume
     - This updates your `package.json`
 12. Fancify the table in `index.js`
 13. `npm install chalk`
+14. Add `node_modules` to `gitignore`
 
 ## Debugging
 
