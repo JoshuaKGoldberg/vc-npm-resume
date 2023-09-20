@@ -9,21 +9,39 @@ function logLines(lines) {
     0
   );
 
-  console.log("-".repeat(longestLineLength + 4));
-  for (const line of lines) {
+  const numberOfLines = lines.length + 2;
+
+  console.log(chalk.hex("#0000FF")("-".repeat(longestLineLength + 4)));
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    const myProgressFraction = (i * 4) / (lines.length - 2);
+    const eachHex = myProgressFraction.toString();
+    const redAndGreen = eachHex.repeat(3);
+    const myColorHex = `#${redAndGreen}FF`;
+    // console.log({ redAndGreen });
     console.log(
-      `| ${line} ${" ".repeat(longestLineLength - stripAnsi(line).length)}|`
+      chalk.hex(myColorHex)(
+        `| ${line} ${" ".repeat(longestLineLength - stripAnsi(line).length)}|`
+      )
     );
   }
-  console.log("-".repeat(longestLineLength + 4));
+  console.log(chalk.hex("#ffffff")("-".repeat(longestLineLength + 4)));
+}
+
+function randomTwoDigits() {
+  return Math.floor(Math.random() * 100);
+}
+
+function randomColor() {
+  return (
+    "#" + (Math.random() * 0xfffff * 1000000).toString(16)
+    // "#" + [randomTwoDigits(), randomTwoDigits(), randomTwoDigits()].join("")
+  );
 }
 
 logLines([
-  chalk.blue("Hello, world!"),
-  "vanilla",
-  chalk.red("Hi, I’m Josh! I’m an full time open source developer."),
-]);
+  "Hello, world!",
+  "i might be 2 cool for u",
 
-// for (const letter of chalk.green("test")) {
-//   console.log(`My letter is:'${letter}'`);
-// }
+  "Hi, I’m Josh! I’m an full time open source developer.",
+]);

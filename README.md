@@ -40,6 +40,7 @@ https://www.npmjs.com/package/vc-npm-resume
     - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 17. `npm install strip-ansi`
 18. Use `stripAnsi` in `index.js` to ease line length computations with chalk
+19. Use fancy schmancy math to randomize colors
 
 ## Debugging
 
